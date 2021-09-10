@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>OOP Modal Project</title>
+    <link rel="stylesheet" type="text/css" href="OOP Modal Project CSS.css">
+</head>
+<body>
+<div class="hidden-box">
+	<h1>I am Taufique Azad! </h1>
+	<p>
+		Second Year Computer Engineer Student (Time when I am typing this lines). Learning JavaScript right now to build my skills. I believe, I have got very good skill in HTML & CSS. Cant wait to be a <strong>Frontend Developer</strong>. Lastly, my dream is to make a game like <em>FIFA</em>. Keep me in your prayers.
+	</p>
+	<p>
+		<button class="js-close-modal">Close Modal</button>
+	</p>
+</div>
+<button class="js-open-modal centre-the-box">Open Modal</button>
+
+<script>
+
+	class Modal {
+            constructor() {
+                this.modal = document.querySelector(".hidden-box")
+            }
+
+            open() {
+                this.modal.style.display = 'initial'
+            }
+
+            close() {
+                this.modal.style.display = 'none'
+            }
+
+        }
+
+        const openBtn = document.querySelector(".js-open-modal")
+        const closeBtn = document.querySelector(".js-close-modal")
+        const modal = new Modal()
+      
+        openBtn.addEventListener('click', function(event) {
+            modal.open()
+        })
+
+        closeBtn.addEventListener('click', function(event) {
+            modal.close()
+        })
+
+</script>
+</body>
+</html>

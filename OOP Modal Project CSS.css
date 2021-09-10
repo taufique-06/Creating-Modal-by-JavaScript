@@ -1,0 +1,51 @@
+html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    html {
+        background-image: url("Modal.jpg");
+        background-size: cover;
+    }
+		.hidden-box {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        border: 1px solid black;
+        box-shadow: 5px 5px #000;
+        width: 80%;
+        max-width: 800px;
+        padding: 20px;
+        transform: translate(-50%, -50%);
+        display:none;
+        font-family: serif;
+        background-image: url("modal-1.jpg");
+        background-size: cover;
+        color: yellow;
+        z-index: 11;
+    }
+
+    h1{
+        font-weight: bold;
+    }
+
+    .centre-the-box{
+        padding: 10px;
+        background-color: skyblue;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* In order to work "z-index", you need to specify the
+        position */
+        position: fixed;
+        z-index: 10;
+        border-radius: 20px;
+    }
+
+    .js-close-modal{
+        border-radius: 20px;
+        background-color: whitesmoke;
+        padding: 10px;
+    }
